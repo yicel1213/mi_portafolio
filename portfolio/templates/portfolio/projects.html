@@ -1,0 +1,26 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+<h1 class="mb-4 text-center">Proyectos en Desarrollo</h1>
+<div class="row">
+    {% for project in projects %}
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            <img src="{% static 'img/'|add:project.image %}" class="card-img-top" alt="{{ project.title }}" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.description }}</p>
+            </div>
+            <div class="card-footer bg-white border-top-0">
+                <span class="badge bg-warning text-dark">En Desarrollo</span>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <div class="col-12">
+        <div class="alert alert-info text-center">No hay proyectos activos en este momento.</div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

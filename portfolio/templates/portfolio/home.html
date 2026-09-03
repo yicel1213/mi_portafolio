@@ -1,0 +1,21 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row align-items-center">
+    <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="{% static 'img/mi_foto.jpg' %}" alt="Foto de perfil" class="img-fluid rounded-circle shadow" style="max-width: 250px;">
+    </div>
+    <div class="col-md-8">
+        <h1 class="display-4 text-primary">{{ saludo }}</h1>
+        <h2 class="h4 text-secondary mb-3">Bienvenido a mi Portafolio Profesional</h2>
+        <p class="lead">
+            Hola, soy Yicel Sepulveda, estudiante de analista programador. Me especializo en el desarrollo de aplicaciones web utilizando tecnologías del lado del servidor con Python y Django.
+        </p>
+        <p>
+            Te invito a explorar la sección de proyectos para ver las aplicaciones en las que me encuentro trabajando actualmente.
+        </p>
+        <a href="{% url 'projects' %}" class="btn btn-primary mt-2">Ver Proyectos en Desarrollo</a>
+    </div>
+</div>
+{% endblock %}

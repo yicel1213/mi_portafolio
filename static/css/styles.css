@@ -1,0 +1,84 @@
+
+body {
+    background-color: #b696ba !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.navbar {
+    background: linear-gradient(135deg, #010713 0%, #042862 100%) !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #e0e0e0 !important;
+}
+
+.nav-link {
+    color: #e0e0e0 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffca28 !important; /* Color amarillo al pasar el mouse */
+}
+
+
+h1.display-4, h1 {
+    color: #1e3c72;
+    font-weight: 700;
+}
+
+
+.btn-primary {
+    background-color: #050b45 !important;
+    border-color: #673e84 !important;
+    padding: 10px 24px;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1e3c72 !important;
+    transform: translateY(-2px);
+}
+
+
+.card {
+    border: none !important;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #e0e0e0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+.card-title {
+    color: #1e3c72;
+    font-weight: bold;
+}
+
+
+.badge.bg-warning {
+    background-color: #ffca28 !important;
+    color: #333 !important;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+}
+
+
+.form-control:focus {
+    border-color: #2a5298;
+    box-shadow: 0 0 0 0.25rem rgba(42, 82, 152, 0.25);
+}
+
+
+footer {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
+}
